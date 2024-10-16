@@ -27,11 +27,11 @@
     }
     .dark-mode {
         background-color: #1a1a1a;
-        color: #ffffff;
+        color: #50a07d;
     }
     .dark-mode .container {
         background-image: linear-gradient(120deg, #3a0033, #001a33, #1a0033);
-        color:#007bff;
+        color:#26ff00;
     }
     .dark-mode .canvas-container {
         background: #2a2a2a;
@@ -473,65 +473,60 @@ h2{
     <div class="container pt-2">
         <div class="header">
             <img src="" alt="">
-            <h1 class="display-4"><a href="/" style="color: inherit; text-decoration: none;">Creative Canvas Tool</a>
-            </h1>
+            <h1 class="animated-text display-4"><a href="/" style="color: inherit; text-decoration: none;">Creative Canvas Tool</a></h1>
             <p class="lead">Design and create stunning visuals effortlessly!</p>
         </div>
-        <div class="row">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-
+        <nav class="navbar navbar-expand-lg navbar-dark glass-navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Canvas Editor</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
-
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-
-                </li>
-                <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="about-us.html">About Us</a>
-                </li>
-                <li class="nav-item">
-
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="review.html">Review</a>
-
-                  <a class="nav-link" href="testimonial.html">Testimonial</a>
-
-                </li>
-                <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="privacy.html">Privacy</a>
                   </li>
-                <li class="nav-item">
+                  <li class="nav-item">
                     <a class="nav-link" href="Blog_page.html">Blog</a>
-                </li>
-                <li class="nav-item">
-
-                    <a class="nav-link" href="./Faq.html">FAQ</a>
-                </li>
-
-                <a class="nav-link" href="signup.html">Sign Up</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-
-                </li>
-                <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="contributors.html">Contributors</a>
-
-                </li>
-
-            </ul>
-        </div>
-        <div class="row text-center p-5" style="background-color: cornflowerblue;">
-            <h2 style="color: white;">Welcome to the Canvas Editor!</h2>
-            <p style="color: white;">Unleash your creativity with our powerful and easy-to-use canvas editor. <i
-                    class="fa-light fa-face-party"></i></p>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="row text-center p-5">
+            <h2 class="welcome-text">Welcome to the Canvas Editor!</h2>
+            <p style="color: rgb(253, 71, 71);">Unleash your creativity with our powerful and easy-to-use canvas editor. 
+                <i class="fa-light fa-face-party"></i>
+            </p>
         </div>
         <div class="canvas-container">
 
-            <b>
-                <h5>Draw Here !!!</h5>
-            </b>
-
-           
-           <b><h2>Draw Here !!!</h2></b>
+           <b><h2>Draw Here!</h2></b>
 
             <canvas id="mainCanvas"></canvas>
             <!-- <div class="p-3 bg-light rounded shadow">

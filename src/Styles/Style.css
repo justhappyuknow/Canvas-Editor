@@ -771,3 +771,125 @@ footer .credit {
   background-color: #0056b3; /* Change to a lighter blue on hover */
   transform: scale(1.1);
 }
+
+
+/* Pariyashi' Code */
+.animated-text {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #be171c, #dd6c4d, #e651bc, #6e44d1);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s ease infinite, waveAnimation 3s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes waveAnimation {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  25% {
+      transform: translateY(-10px);
+  }
+  50% {
+      transform: translateY(10px);
+  }
+  75% {
+      transform: translateY(-5px);
+  }
+}
+
+
+/* Navbar Custom Styling */
+/* Full-width Navbar with Glass Effect */
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker shade with transparency */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Border for clean effect */
+}
+
+/* Adjusting brand logo */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* White for contrast against dark background */
+}
+
+/* Nav Links */
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem; /* Spacing for better visibility */
+  transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #6f42c1; /* Purple hover color */
+  background-color: rgba(255, 255, 255, 0.1); /* Light hover background */
+  border-radius: 0.3rem; /* Subtle rounded effect */
+}
+
+/* Active link */
+.nav-link.active {
+  color: #6f42c1; /* Purple for the active link */
+  font-weight: bold;
+}
+
+/* Adjusting the Toggler for mobile view */
+.navbar-toggler {
+  border: none;
+}
+
+/* Toggler icon color */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Mobile menu styling */
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+/* Welcome Text Styling */
+.welcome-text {
+  font-size: 1.8rem; /* Smaller font size */
+  color: rgb(241, 62, 62);
+  font-weight: bold;
+  letter-spacing: 2px; /* Adds a nice spacing between letters */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white; /* Cursor effect */
+  width: 0; /* Initially hidden */
+  margin: 0 auto; /* Center-align the text */
+  animation: typewriter 3s steps(22) infinite, blink 500ms steps(22) infinite;
+}
+
+/* Typewriter animation */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+  from { border-right-color​: white;}}
+
+ 
