@@ -524,9 +524,9 @@ h2{
                 <i class="fa-light fa-face-party"></i>
             </p>
         </div>
-        <div class="canvas-container">
+        <div class="canvas-containers">
 
-           <b><h2>Draw Here!</h2></b>
+           <b><h2 style="text-align: center;">Draw Here!</h2></b>
 
             <canvas id="mainCanvas"></canvas>
             <!-- <div class="p-3 bg-light rounded shadow">
@@ -677,52 +677,57 @@ h2{
                 <!-- Contact Us Section -->
                 <section id="contact" class="contact-section text-center py-5">
                     <h2 class="mb-4">Contact Us</h2>
-                  <div class="social-media-links">
-                    <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
-                    <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">         
-                    <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
-                    <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
-                </div>
-                    <form id="contactForm" class="row g-3 justify-content-center">
-                        <!-- Name Field -->
-                        <div class="col-md-4">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
-                                    required>
-                                <label for="name">Your Name</label>
-                            </div>
+                    
+                    <!-- Social Media Links -->
+                    <div class="social-media-links mb-4">
+                      <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
+                      <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
+                      <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
+                      <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="row g-3 justify-content-center mx-auto" style="max-width: 450px;">
+                      
+                      <!-- Name Field -->
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                          <label for="name">Your Name</label>
                         </div>
-                        <!-- Email Field -->
-                        <div class="col-md-4">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Your Email" required>
-                                <label for="email">Your Email</label>
-                            </div>
+                      </div>
+                      
+                      <!-- Email Field -->
+                      <div class="col-5">
+                        <div class="form-floating">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                          <label for="email">Your Email</label>
                         </div>
-                        <!-- Subject Field -->
-                        <div class="col-md-8">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="subject" name="subject"
-                                    placeholder="Subject" required>
-                                <label for="subject">Subject</label>
-                            </div>
+                      </div>
+                      
+                      <!-- Subject Field -->
+                      <div class="col-10">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                          <label for="subject">Subject</label>
                         </div>
-
-                        <!-- Message Field -->
-                        <div class="col-md-8">
-                            <div class="form-floating">
-                                <textarea class="form-control" id="message" name="message" placeholder="Your Message"
-                                    style="height: 150px" required></textarea>
-                                <label for="message">Your Message</label>
-                            </div>
+                      </div>
+                      
+                      <!-- Message Field -->
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 120px" required></textarea>
+                          <label for="message">Your Message</label>
                         </div>
-                        <!-- Submit Button -->
-                        <div class="col-md-8">
-                            <button type="submit" class="btn btn-primary w-100 py-2">Submit</button>
-                        </div>
+                      </div>
+                      
+                      <!-- Submit Button -->
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-100 py-2">Submit</button>
+                      </div>
+                      
                     </form>
-                </section>
+                  </section>
             </div>
 
         </div>
@@ -731,18 +736,18 @@ h2{
 
                     </div>
                     <!-- Message Field -->
-                    <div class="col-md-8">
+                    <!-- <div class="col-md-8">
                         <div class="form-floating">
                             <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 150px" required></textarea>
                             <label for="message">Your Message (minimum 20 characters)</label>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Submit Button -->
-                    <div class="col-md-12 d-flex justify-content-center">
+                    <!-- <div class="col-md-12 d-flex justify-content-center">
                         <div class="col-md-8">
                             <button type="submit" class="btn btn-primary w-100 py-2">Submit</button>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
             </section>
         </div>
@@ -844,28 +849,32 @@ h2{
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="./src/Scripts/edit.js"></script> -->
 
-        <section class="footer" id="footer">
-            <!-- Added responsiveness to icons -->
+    <section class="footer1" id="footer">
+        <div class="footer-container">
+            <!-- Social Media Icons -->
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fa-brands fa-x-twitter"></a> <!-- Updated X icon-->
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="https://www.linkedin.com/in/anuragvishwakarma/" class="fa-brands fa-linkedin-in"></a>
+                <a href="#" class="fab fa-facebook-f" target="_blank"></a>
+                <a href="#" class="fa-brands fa-x-twitter" target="_blank"></a>
+                <a href="#" class="fab fa-instagram" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/anuragvishwakarma/" class="fa-brands fa-linkedin-in" target="_blank"></a>
                 <a href="#" class="fa-brands fa-pinterest"></a>
             </div>
-
-            <div class="credit" style="font-size: 0.6rem;">
-                <p>
-                    Created by <a href="https://github.com/vishanurag">ANURAG VISHWAKARMA </a> | All rights reserved ©
-                    2024
-                </p>
-                <br>
+            <div class="footer-clipart">
+                <img src="/src/images/footerimg.png" alt="Clipart" id="footerClipart">
             </div>
+    
+    
+            <!-- Credit -->
+            <div class="credit">
+                <p>Created by <a href="https://github.com/vishanurag" target="_blank">Anurag Vishwakarma</a> | © 2024 All rights reserved</p>
+            </div>
+    
             <!-- Back to Top Button -->
             <button id="BacktoTop">
-                <span>↑</span>
+                <span>↑ Top</span>
             </button>
-        </section>
+        </div>
+    </section>
 
         <script src="src\Scripts\preloader.js"></script>
         <script>

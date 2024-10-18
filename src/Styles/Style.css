@@ -618,7 +618,7 @@ button#download:hover::after {
   margin-top: 15px;
 }
 
-.footer {
+/* .footer {
   background: black;
   text-align: center;
 }
@@ -682,16 +682,17 @@ footer .credit {
   #mainCanvas {
     width: 90%;
   }
-}
-/* Contact Us Section */
+} */
 .contact-section {
   background-color: #f9f9f9;
-  padding: 50px;
+  padding: 30px;
+  max-width: 500px; /* Ensure the section width stays within bounds */
   text-align: center;
-  max-width: 650px;
   border-radius: 15px;
   margin-top: 30px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
 .contact-section h2 {
@@ -702,7 +703,8 @@ footer .credit {
 }
 
 .contact-section form {
-  max-width: 600px;
+  width: 100%; /* Form takes the full width of the container */
+  max-width: 450px; /* Keep form within the contact section */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -717,12 +719,14 @@ footer .credit {
 
 .contact-section input,
 .contact-section textarea {
-  width: 100%;
+  width: 100%; /* Ensure input fields take full width of form */
+  max-width: 100%; /* Prevent fields from exceeding container width */
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .contact-section button {
@@ -738,15 +742,17 @@ footer .credit {
 .contact-section button:hover {
   background-color: #555;
 }
-.contact .social-media-links {
-  width: 230px;
+
+.contact-section .social-media-links {
+  display: flex;
   justify-content: space-evenly;
-}
-.link-img{
-  margin-left: 20px;
-  font-size: 30px;
+  margin-bottom: 20px;
 }
 
+.link-img {
+  font-size: 30px;
+  margin: 0 10px; /* Uniform margin between icons */
+}
 /* Back to Top Button */
 #BacktoTop {
   position: fixed; /* Stay in fixed position */
@@ -892,4 +898,100 @@ footer .credit {
 @keyframes blink {
   from { border-right-color​: white;}}
 
- 
+ .canvas-containers{
+  background-image: url(../images/cavasbg.jpg);
+  border-radius: 10px;
+  
+ }
+
+ /* Footer Aesthetics*/
+ /* Footer Styling */
+/* Footer Styling */
+.footer1 {
+  background-color: rgba(0, 0, 0, 0.7); /* Black background */
+  color: #fff; /* White text */
+  padding: 20px 0;
+  height: 250px;
+  text-align: center;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Social Media Icons */
+.share a {
+  color: #fff; /* White icon color */
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.share a:hover {
+  color: #f39c12; /* Yellow on hover */
+}
+
+/* Credit Section */
+.credit p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.credit a {
+  color: #fff; /* White text */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.credit a:hover {
+  color: #f39c12; /* Yellow on hover */
+}
+
+/* Back to Top Button */
+#BacktoTop {
+  background-color: #f39c12; /* Yellow background */
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#BacktoTop:hover {
+  background-color: #e74c3c; /* Change to red on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .share a {
+      font-size: 1.2rem;
+      margin: 0 8px;
+  }
+
+  #BacktoTop {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+  }
+}
+/* Clipart */
+.footer-clipart {
+  margin: 10px 0;
+}
+
+#footerClipart {
+  width: 100px; /* Adjust the size of the clipart */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#footerClipart:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
